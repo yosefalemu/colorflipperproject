@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css for the header section */
+.header{
+    width: 100%;
+    background: #fff;
+    background: rgb(225, 225, 231);
+    box-shadow: rgba(0, 0, 0, 0.1) 4px 9px 25px -10px;
+}
+.header nav{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: #1e7ac0;
+    font-size: 26px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 20px 20px;
+}
+.header nav a{
+    text-decoration: none;
+    color: #292727;
+}
+.header nav li{
+    list-style: none;
+    margin: 0 5%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header nav .nav-links{
+    display: flex;
+    justify-content: space-between;
+} 
+/* css for the main section */
+.main{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background: #f1f5f8 ;
+}
+.main div{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.main div h2{
+    text-transform: capitalize;
+    margin: 5% 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+}
+.main div h2 span{
+    text-transform: uppercase;
+    color: #1e7ac0;
+}
+.main div button{
+    padding: 2% 5%;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+@media(max-width: 850px){
+    
+    .header nav{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .header nav .nav-links{
+        display: block;
+        width: 100%;
+    } 
+    .header nav h4{
+        margin-bottom: 10px;
+    } 
+    .main{
+        height: 70vh;
+    }
+
+
+}
